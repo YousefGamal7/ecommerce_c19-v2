@@ -13,6 +13,8 @@ sealed class AppRoutes{
     object FavoritesTab : AppRoutes()
     @Serializable
     object ProfileTab : AppRoutes()
+    @Serializable
+    object SearchTab : AppRoutes()
 
 
     @Serializable

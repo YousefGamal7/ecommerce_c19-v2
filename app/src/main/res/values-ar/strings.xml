@@ -49,4 +49,13 @@
     <string name="login_button">تسجيل الدخول</string>
     <string name="create_account_prompt">ليس لديك حساب؟ إنشاء حساب</string>
     <string name="already_have_account_prompt">لديك حساب بالفعل؟ تسجيل الدخول</string>
+
+    <!-- Search Tab -->
+    <string name="search_tab_title">بحث</string>
+    <string name="search_placeholder">ابحث عن المنتجات...</string>
+    <string name="search_results_found">تم العثور على %1$d منتج</string>
+    <string name="no_products_found">لم يتم العثور على أي منتجات</string>
+    <string name="no_products_found_desc">جرب البحث بكلمات مختلفة أو اسم آخر</string>
+    <string name="search_prompt_title">استكشف المنتجات</string>
+    <string name="search_prompt_desc">اكتب اسم المنتج أو الماركة لبدء البحث</string>
 </resources>

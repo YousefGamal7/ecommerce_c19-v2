@@ -219,6 +219,7 @@ class ProfileViewModel @Inject constructor(
                     is Resource.Success -> {
                         _states.emit(ProfileContract.State.Guest(authMode = ProfileContract.AuthMode.SIGN_IN))
                         _events.send(ProfileContract.Event.ShowMessage("Signed out successfully"))
+                        _events.send(ProfileContract.Event.NavigateToSignIn)
                     }
                     is Resource.Error -> {
                         _states.update { current ->

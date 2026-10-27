@@ -53,5 +53,6 @@ interface ProfileContract {
 
     sealed class Event {
         data class ShowMessage(val message: String) : Event()
+        data object NavigateToSignIn : Event()
     }
 }

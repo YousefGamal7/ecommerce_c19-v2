@@ -24,4 +24,23 @@ class ProductsOnlineDataSourceImpl @Inject constructor(
             }
         )
     }
+
+    override fun searchProducts(query: String?): Flow<Resource<List<Product>?>> {
+        return safeApiCallV2(
+            api = {
+                apiServices.getAllProducts(limit = 100)
+            },
+            converter = { dtos ->
+                val products = dtos?.map { it.toProduct() } ?: emptyList()
+                if (query.isNullOrBlank()) {
+                    products
+                } else {
+                    val cleanQuery = query.trim().lowercase()
+                    products.filter { product ->
+                        product.name?.lowercase()?.contains(cleanQuery) == true
+                    }
+                }
+            }
+        )
+    }
 }

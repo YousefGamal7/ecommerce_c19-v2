@@ -16,6 +16,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 fun ProfileScreen(
     modifier: Modifier = Modifier,
     viewModel: ProfileViewModel = hiltViewModel(),
+    onNavigateToSignIn: () -> Unit = {},
 ) {
     val context = LocalContext.current
 
@@ -28,6 +29,9 @@ fun ProfileScreen(
             when (event) {
                 is ProfileContract.Event.ShowMessage -> {
                     Toast.makeText(context, event.message, Toast.LENGTH_SHORT).show()
+                }
+                ProfileContract.Event.NavigateToSignIn -> {
+                    onNavigateToSignIn()
                 }
             }
         }

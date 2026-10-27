@@ -40,4 +40,9 @@ interface ApiServices {
         @Query("sort") sort: ProductsSortTypeDto,
     ): BaseResponse<List<ProductDto>>
 
+    @GET("v1/products")
+    suspend fun getAllProducts(
+        @Query("limit") limit: Int = 100,
+    ): BaseResponse<List<ProductDto>>
+
 }

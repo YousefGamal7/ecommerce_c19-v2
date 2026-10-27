@@ -35,6 +35,9 @@ data class ProductDto(
 	@field:SerializedName("price")
 	val price: Int? = null,
 
+	@field:SerializedName("priceAfterDiscount")
+	val priceAfterDiscount: Int? = null,
+
 	@field:SerializedName("_id")
 	val id: String? = null,
 
@@ -54,10 +57,15 @@ data class ProductDto(
 	val updatedAt: String? = null
 ){
 	fun toProduct(): Product{
+		val rating = (ratingsAverage as? Number)?.toDouble()
 		return Product(
 			id = id,
 			name = title,
+			description = description,
 			imageUrl = imageCover,
+			price = price,
+			priceAfterDiscount = priceAfterDiscount,
+			ratingsAverage = rating,
 		)
 	}
 }

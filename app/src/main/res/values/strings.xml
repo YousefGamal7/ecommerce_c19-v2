@@ -49,4 +49,13 @@
     <string name="login_button">Login</string>
     <string name="create_account_prompt">Don’t have an account? Create Account</string>
     <string name="already_have_account_prompt">Already have an account? Sign In</string>
+
+    <!-- Search Tab -->
+    <string name="search_tab_title">Search</string>
+    <string name="search_placeholder">Search for products...</string>
+    <string name="search_results_found">%1$d products found</string>
+    <string name="no_products_found">No products found</string>
+    <string name="no_products_found_desc">Try searching with different keywords</string>
+    <string name="search_prompt_title">Discover Products</string>
+    <string name="search_prompt_desc">Type a product name, brand, or category to start searching</string>
 </resources>

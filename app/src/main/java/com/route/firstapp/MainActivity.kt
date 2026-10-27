@@ -31,6 +31,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import com.route.firstapp.ui.AppRoutes
+import com.route.firstapp.ui.auth.signIn.SignInScreen
+import com.route.firstapp.ui.auth.signUp.SignUpScreen
+import com.route.firstapp.ui.categories.CategoriesScreen
 import com.route.firstapp.ui.home.CategoriesTab
 import com.route.firstapp.ui.home.FavoritesTab
 import com.route.firstapp.ui.home.HomeScreen
@@ -65,7 +68,7 @@ fun RouteEcommerceApp(){
         ){ _ ->
             AppNavHost(
                 navController = navController,
-                startDestination = AppRoutes.Home
+                startDestination = AppRoutes.SignIn
             )
         }
     }
@@ -75,12 +78,37 @@ fun RouteEcommerceApp(){
 @Composable
 fun AppNavHost(modifier: Modifier = Modifier,
                navController: NavHostController,
-               startDestination: AppRoutes
+               startDestination: AppRoutes = AppRoutes.SignIn
                ) {
     NavHost(
+        modifier = modifier,
         navController = navController,
         startDestination = startDestination,
     ) {
+        composable<AppRoutes.SignIn> {
+            SignInScreen(
+                onNavigateToSignUp = {
+                    navController.navigate(AppRoutes.SignUp)
+                },
+                onNavigateToHome = {
+                    navController.navigate(AppRoutes.Home) {
+                        popUpTo(AppRoutes.SignIn) { inclusive = true }
+                    }
+                },
+            )
+        }
+        composable<AppRoutes.SignUp> {
+            SignUpScreen(
+                onNavigateToSignIn = {
+                    navController.popBackStack()
+                },
+                onNavigateToHome = {
+                    navController.navigate(AppRoutes.Home) {
+                        popUpTo(AppRoutes.SignIn) { inclusive = true }
+                    }
+                },
+            )
+        }
         composable<AppRoutes.Home> {
             HomeScreen(
                 appNavController = navController,

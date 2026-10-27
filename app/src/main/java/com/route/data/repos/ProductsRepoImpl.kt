@@ -16,4 +16,8 @@ class ProductsRepoImpl @Inject constructor(
            sort = sort,
        )
     }
+
+    override fun searchProducts(query: String?): Flow<Resource<List<Product>?>> {
+        return productsOnlineDataSource.searchProducts(query = query)
+    }
 }
