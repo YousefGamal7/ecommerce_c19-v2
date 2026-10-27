@@ -18,6 +18,12 @@ sealed class AppRoutes{
     @Serializable
     object Home : AppRoutes()
 
+    @Serializable
+    object SignIn : AppRoutes()
+
+    @Serializable
+    object SignUp : AppRoutes()
+
     // Route for a screen requiring data
     @Serializable
     data class ProductDetails(val productId: String): AppRoutes()

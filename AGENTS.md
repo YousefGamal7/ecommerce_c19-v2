@@ -15,7 +15,7 @@ Products Catalog screens that are still to be built.
 | Concern | Choice |
 |---|---|
 | Language | Kotlin 2.4.21 (AGP 9 built‑in Kotlin; no `kotlin-android` plugin) |
-| Build | Gradle Kotlin DSL, AGP 9.4.0, version catalog in `gradle/libs.versions.toml` |
+| Build | Gradle Kotlin DSL, AGP 9.2.1, version catalog in `gradle/libs.versions.toml` |
 | SDK | `compileSdk`/`targetSdk` 37, `minSdk` 24, Java 11 bytecode |
 | UI | Jetpack Compose + Material 3 (Compose BOM 2026.02.01) |
 | Images | Glide Compose (`GlideImage`, needs `@OptIn(ExperimentalGlideComposeApi::class)`) |

@@ -1,7 +1,11 @@
 package com.route.api
 
+import com.route.api.dataSource.AuthOnlineDataSourceImpl
 import com.route.api.dataSource.CategoriesOnlineDataSourceImpl
 import com.route.api.dataSource.ProductsOnlineDataSourceImpl
+import com.route.data.dataSource.AuthLocalDataSource
+import com.route.data.dataSource.AuthLocalDataSourceImpl
+import com.route.data.dataSource.AuthOnlineDataSource
 import com.route.data.dataSource.CategoriesOnlineDataSource
 import com.route.data.dataSource.ProductsOnlineDataSource
 import dagger.Binds
@@ -23,6 +27,16 @@ abstract class DataSourcesModule {
     abstract fun provideProductsDataSource(
         dataSource : ProductsOnlineDataSourceImpl
     ): ProductsOnlineDataSource
+
+    @Binds
+    abstract fun provideAuthOnlineDataSource(
+        dataSource : AuthOnlineDataSourceImpl
+    ): AuthOnlineDataSource
+
+    @Binds
+    abstract fun provideAuthLocalDataSource(
+        dataSource : AuthLocalDataSourceImpl
+    ): AuthLocalDataSource
 }
 
 //@Module

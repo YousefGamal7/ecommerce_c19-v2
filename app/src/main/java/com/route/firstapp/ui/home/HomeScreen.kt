@@ -59,6 +59,7 @@ import com.route.firstapp.ui.home.productsSection.HorizontalProductCardRow
 import com.route.firstapp.ui.productDetails.ProductDetailsScreen
 import com.route.firstapp.ui.theme.BrandColor
 import com.route.firstapp.ui.theme.FirstAppTheme
+import com.route.firstapp.ui.profile.ProfileScreen
 
 enum class HomeTabs(
     val icon: ImageVector,
@@ -223,7 +224,7 @@ fun FavoritesTab(modifier: Modifier = Modifier) {
 
 @Composable
 fun ProfileTab(modifier: Modifier = Modifier) {
-
+    ProfileScreen(modifier = modifier)
 }
 
 @Composable

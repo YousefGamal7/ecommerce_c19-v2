@@ -5,5 +5,48 @@
     <string name="cateogries">Categories</string>
     <string name="most_purshable">Most Purchasable</string>
     <string name="generic_error_message">Something Went wrong</string>
+    <string name="try_again">إعادة المحاولة</string>
     <string name="no_sub_categories">لا توجد أقسام فرعية بعد</string>
+
+    <!-- Profile & Authentication -->
+    <string name="profile_tab_title">الملف الشخصي</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up">إنشاء حساب</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="welcome_back">مرحباً بعودتك</string>
+    <string name="welcome_back_subtitle">سجل الدخول إلى حسابك</string>
+    <string name="create_account_title">إنشاء حساب جديد</string>
+    <string name="create_account_subtitle">أنشئ حسابك للبدء في التسوق</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="name_placeholder">أدخل اسمك بالكامل</string>
+    <string name="email_label">البريد الإلكتروني</string>
+    <string name="email_placeholder">أدخل بريدك الإلكتروني</string>
+    <string name="password_label">كلمة المرور</string>
+    <string name="password_placeholder">أدخل كلمة المرور</string>
+    <string name="confirm_password_label">تأكيد كلمة المرور</string>
+    <string name="confirm_password_placeholder">أعد إدخال كلمة المرور</string>
+    <string name="phone_label">رقم الهاتف</string>
+    <string name="phone_placeholder">مثال: 01012345678</string>
+    <string name="dont_have_account">ليس لديك حساب؟ إنشاء حساب</string>
+    <string name="already_have_account">لديك حساب بالفعل؟ تسجيل الدخول</string>
+    <string name="name_required">الاسم يجب ألا يقل عن 3 أحرف</string>
+    <string name="email_required">يرجى إدخال بريد إلكتروني صالح</string>
+    <string name="password_required">كلمة المرور يجب ألا تقل عن 6 أحرف</string>
+    <string name="password_not_match">كلمتا المرور غير متطابقتين</string>
+    <string name="phone_required">أدخل رقم هاتف مصري صالح (11 رقماً، مثل 01012345678)</string>
+    <string name="signed_in_successfully">تم تسجيل الدخول بنجاح</string>
+    <string name="signed_up_successfully">تم إنشاء الحساب بنجاح</string>
+    <string name="signed_out_successfully">تم تسجيل الخروج بنجاح</string>
+    <string name="personal_information">المعلومات الشخصية</string>
+    <string name="account_role">نوع الحساب</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="my_addresses">عناويني</string>
+    <string name="wishlist">قائمة الرغبات</string>
+
+    <string name="welcome_back_route">مرحباً بعودتك إلى روت</string>
+    <string name="sign_in_subtitle">يرجى تسجيل الدخول باستخدام بريدك الإلكتروني</string>
+    <string name="forgot_password">نسيت كلمة المرور</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="create_account_prompt">ليس لديك حساب؟ إنشاء حساب</string>
+    <string name="already_have_account_prompt">لديك حساب بالفعل؟ تسجيل الدخول</string>
 </resources>
